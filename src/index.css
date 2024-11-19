@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  pre {
+    @apply p-0 m-0;
+  }
+}
+
+/* Syntax highlighting styles */
+pre {
+  @apply bg-gray-900 text-gray-100 p-2 rounded-md overflow-x-auto;
+}
+
+.hljs-keyword {
+  @apply text-purple-400;
+}
+
+.hljs-string {
+  @apply text-green-400;
+}
+
+.hljs-number {
+  @apply text-yellow-400;
+}
+
+.hljs-function {
+  @apply text-blue-400;
+}
+
+.hljs-comment {
+  @apply text-gray-500;
+}
+
+code {
+  @apply font-mono text-sm bg-gray-700 text-white py-0 px-1 rounded-sm;
+}
+
+pre code {
+  @apply p-0 bg-inherit text-inherit;
+}
+
+ol {
+  @apply list-decimal list-outside;
+}
+
+ul {
+  @apply list-disc list-outside;
+}
